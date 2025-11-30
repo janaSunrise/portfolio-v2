@@ -13,16 +13,12 @@ export function Clock() {
       hour12: true
     });
 
-    const updateTime = () => {
-      setTime(formatter.format(new Date()));
-    };
+    const updateTime = () => setTime(formatter.format(new Date()));
 
     updateTime();
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
   }, []);
 
-  if (!time) return <span className="opacity-0">00:00 AM</span>;
-
-  return <span>{time}</span>;
+  return <span className={time ? '' : 'opacity-0'}>{time || '00:00 AM'}</span>;
 }

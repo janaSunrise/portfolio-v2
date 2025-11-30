@@ -51,7 +51,9 @@ export default function SayHi() {
             <span className="text-[10px] sm:text-xs uppercase tracking-widest text-zinc-400">
               Twitter
             </span>
-            <span className="text-sm sm:text-base text-foreground">@janaSunrise</span>
+            <span className="text-sm sm:text-base text-foreground">
+              @janaSunrise
+            </span>
           </div>
           <span className="text-zinc-400 group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-sm sm:text-base">
             ↗
@@ -68,7 +70,9 @@ export default function SayHi() {
             <span className="text-[10px] sm:text-xs uppercase tracking-widest text-zinc-400">
               Discord
             </span>
-            <span className="text-sm sm:text-base text-foreground">@sunritjana</span>
+            <span className="text-sm sm:text-base text-foreground">
+              @sunritjana
+            </span>
           </div>
           <span className="text-zinc-400 group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-sm sm:text-base">
             ↗

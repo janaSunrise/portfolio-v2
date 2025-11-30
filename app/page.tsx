@@ -28,15 +28,13 @@ export default function Home() {
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-widest">
           01. what i{"'"}m doing rn
         </h2>
-        <div className="text-sm sm:text-base leading-relaxed space-y-2">
-          <ul className="space-y-1.5">
-            <li>- attempting to survive college and final exams</li>
-            <li>
-              - studying low-level systems, parallel programming and
-              distributed systems
-            </li>
-          </ul>
-        </div>
+        <ul className="text-sm sm:text-base leading-relaxed space-y-0.5">
+          <li>- attempting to survive college and final exams</li>
+          <li>
+            - studying low-level systems, parallel programming and distributed
+            systems
+          </li>
+        </ul>
       </section>
 
       {/* 02. what i've done */}
