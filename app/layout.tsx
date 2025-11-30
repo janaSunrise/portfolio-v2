@@ -37,8 +37,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          <div className="min-h-screen flex flex-col items-center px-4 sm:px-6 pt-4 sm:pt-6 pb-8 sm:pb-12 bg-background text-foreground">
+            <div className="w-full max-w-2xl space-y-8 sm:space-y-10">
+              <Navbar />
+              {children}
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>

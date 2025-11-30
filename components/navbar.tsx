@@ -15,36 +15,27 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-6 md:px-0 max-w-2xl mx-auto w-full bg-background">
-      <Link
-        href="/"
-        className="text-lg font-extrabold tracking-tight"
-      >
+    <nav className="flex items-center justify-between py-4">
+      <Link href="/" className="text-lg font-extrabold tracking-tight">
         ~/.sunrit
       </Link>
-      <div className="flex items-center gap-5 text-md font-medium text-foreground decoration-2">
-        <Link
-          href="#"
-          className="hover:text-foreground hover:underline underline-offset-4 decoration-zinc-400"
-        >
-          log
-        </Link>
+      <div className="flex items-center gap-3 sm:gap-4">
         <Link
           href="/library"
-          className="hover:text-foreground hover:underline underline-offset-4 decoration-zinc-400"
+          className="text-xs sm:text-sm hover:underline underline-offset-4 transition-all"
         >
           library
         </Link>
         <Link
           href="/hi"
-          className="hover:text-foreground hover:underline underline-offset-4 decoration-zinc-400"
+          className="text-xs sm:text-sm hover:underline underline-offset-4 transition-all"
         >
           say hi
         </Link>
         {mounted && (
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="ml-1 text-lg transition-colors hover:text-foreground/60"
+            className="ml-1 text-base sm:text-lg transition-colors hover:opacity-60 active:opacity-40"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? '○' : '●'}
