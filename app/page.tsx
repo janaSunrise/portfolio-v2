@@ -10,7 +10,7 @@ export default function Home() {
             <span>•</span>
             <Clock />
           </div>
-          <h1 className="text-4xl md:text-5xl font-medium tracking-tight text-foreground font-playfair">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground font-playfair">
             hey, i&apos;m sunrit.
           </h1>
           <p className="text-base text-foreground leading-relaxed">
@@ -37,6 +37,10 @@ export default function Home() {
             </ul>
           </div>
         </section>
+
+        {/* 02. what i've done */}
+        {/* 03. stuff i've built */}
+        {/* footer */}
       </div>
     </div>
   );

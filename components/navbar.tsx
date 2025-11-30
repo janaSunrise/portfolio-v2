@@ -15,14 +15,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-8 md:px-0 max-w-2xl mx-auto w-full bg-background">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-6 md:px-0 max-w-2xl mx-auto w-full bg-background">
       <Link
         href="/"
-        className="text-lg font-bold tracking-tight hover:underline underline-offset-4 decoration-zinc-400 decoration-0"
+        className="text-lg font-extrabold tracking-tight"
       >
         ~/.sunrit
       </Link>
-      <div className="flex gap-4 text-lg font-medium text-foreground items-center decoration-2">
+      <div className="flex items-center gap-5 text-md font-medium text-foreground decoration-2">
         <Link
           href="#"
           className="hover:text-foreground hover:underline underline-offset-4 decoration-zinc-400"
@@ -36,7 +36,7 @@ export function Navbar() {
           library
         </Link>
         <Link
-          href="/say-hi"
+          href="/hi"
           className="hover:text-foreground hover:underline underline-offset-4 decoration-zinc-400"
         >
           say hi
@@ -44,7 +44,7 @@ export function Navbar() {
         {mounted && (
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="hover:text-foreground transition-colors ml-2 text-lg"
+            className="ml-1 text-lg transition-colors hover:text-foreground/60"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? '○' : '●'}
