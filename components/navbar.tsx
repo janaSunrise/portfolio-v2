@@ -10,10 +10,16 @@ export function Navbar() {
 
   return (
     <nav className="flex items-center justify-between py-4">
-      <Link href="/" className="text-lg font-extrabold tracking-tight">
+      <Link href="/" className="text-lg font-bold tracking-tight">
         ~/.sunrit
       </Link>
-      <div className="flex items-center gap-3 sm:gap-4 decoration-2">
+      <div className="flex items-center gap-2 sm:gap-4 decoration-2">
+        <Link
+          href="/about"
+          className="text-xs sm:text-sm hover:underline underline-offset-4 transition-all"
+        >
+          about
+        </Link>
         <Link
           href="/library"
           className="text-xs sm:text-sm hover:underline underline-offset-4 transition-all"
@@ -29,7 +35,7 @@ export function Navbar() {
         {mounted && (
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="ml-1 text-base sm:text-lg transition-colors hover:opacity-60 active:opacity-40"
+            className="text-base sm:text-lg transition-colors active:opacity-40"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? '○' : '●'}

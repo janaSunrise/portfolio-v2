@@ -18,7 +18,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Sunrit Jana',
-  description: 'Engineer. Builder on the internet.'
+  description: 'Engineer and Internet Builder'
 };
 
 export default function RootLayout({
@@ -37,8 +37,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen flex flex-col items-center px-4 sm:px-6 pt-4 sm:pt-6 pb-8 sm:pb-12 bg-background text-foreground">
-            <div className="w-full max-w-2xl space-y-8 sm:space-y-10">
+          <div className="min-h-screen flex flex-col items-center px-6 pt-4 bg-background text-foreground">
+            <div className="w-full max-w-2xl space-y-6">
               <Navbar />
               {children}
             </div>

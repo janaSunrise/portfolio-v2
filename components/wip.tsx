@@ -10,10 +10,10 @@ export function WIP({
   return (
     <div className="w-full max-w-lg">
       <div className="mb-8 text-center">
-        <p className="text-xs uppercase tracking-[0.3em] text-zinc-400 mb-3">
+        <p className="text-xs uppercase tracking-[0.3em] mb-4">
           Under Construction
         </p>
-        <h1 className="text-3xl md:text-4xl font-medium tracking-tight font-playfair">
+        <h1 className="text-3xl sm:text-4xl font-medium tracking-tight font-serif">
           /{title}
         </h1>
       </div>
