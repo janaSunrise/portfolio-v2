@@ -45,7 +45,10 @@ export default function Home() {
           <li>
             - went on a hackathon streak, winner/runner up in 5/5 in a row.
           </li>
-          <li>- (almost) a national finalist in spell bee (among 800k) when i was 12.</li>
+          <li>
+            - (almost) a national finalist in spell bee (among 800k) when i was
+            12.
+          </li>
         </ul>
       </section>
 
@@ -73,12 +76,11 @@ export default function Home() {
             >
               socal
             </a>
-            : built a social calendar for friends. no one shared their schedule {":("}
+            : built a social calendar for friends. no one shared their schedule{' '}
+            {':('}
           </li>
         </ul>
       </section>
-
-      {/* footer */}
     </>
   );
 }
