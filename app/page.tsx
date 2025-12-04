@@ -30,6 +30,7 @@ export default function Home() {
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>- bachelors in cs + ml</li>
+          <li>- learning cuda, maths, and optimisation</li>
           <li>- studying low level systems and parallel programming</li>
         </ul>
       </section>
@@ -46,9 +47,10 @@ export default function Home() {
             - went on a hackathon streak, winner/runner up in 5/5 in a row.
           </li>
           <li>
-            - (almost) a national finalist in spell bee (among 800k) when i was
+            - (almost) a national finalist in spell bee (among 200k) when i was
             12.
           </li>
+          <li>- partied in a different city, the night before my finals</li>
         </ul>
       </section>
 
@@ -62,7 +64,7 @@ export default function Home() {
             -{' '}
             <a
               href="https://github.com/janaSunrise/mactop"
-              className="hover:underline underline-offset-4 decoration-2 transition-all"
+              className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
             >
               mactop
             </a>
@@ -72,7 +74,7 @@ export default function Home() {
             -{' '}
             <a
               href="#"
-              className="hover:underline underline-offset-4 decoration-2 transition-all"
+              className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
             >
               socal
             </a>
