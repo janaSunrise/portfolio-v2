@@ -5,11 +5,13 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col">
-        <div className="flex items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-4">
+        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-4">
           <span>Vellore, India</span>
           <span>•</span>
           <Clock />
-          <Spotify />
+          <div className="w-full sm:w-auto flex items-center gap-2">
+            <Spotify />
+          </div>
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight mb-6">
           hey, i{"'"}m sunrit.
@@ -43,8 +45,8 @@ export default function Home() {
           02. what i{"'"}ve done
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
-          <li>- built a web3 startup, raised $60,000. when i was 17</li>
-          <li>- built a tiny minecraft server hosting, made a whopping $8,000. i was 15</li>
+          <li>- built a web3 startup, raised $60,000. when i was 17.</li>
+          <li>- built a tiny minecraft server hosting, made a whopping $8,000. i was 15.</li>
           <li>- featured on young ai devs on cnbc tv18 by meta</li>
           <li>
             - went on a hackathon streak, winner/runner up in 5/5 in a row.
@@ -69,7 +71,7 @@ export default function Home() {
               href="https://github.com/janaSunrise/mactop"
               className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
             >
-              mactop
+              [mactop]
             </a>
             : built an apple silicon monitoring tui
           </li>
@@ -79,7 +81,7 @@ export default function Home() {
               href="#"
               className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
             >
-              socal
+              [socal]
             </a>
             : built a social calendar for friends. no one shared their schedule{' '}
             {':('}
@@ -90,7 +92,7 @@ export default function Home() {
               href="https://github.com/janaSunrise/mathsidian"
               className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
             >
-              mathsidian
+              [mathsidian]
             </a>
             : my take on math tooling for obsidian. abandoned bec no time.
           </li>
