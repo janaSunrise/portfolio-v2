@@ -15,10 +15,10 @@ export default function Home() {
           hey, i{"'"}m sunrit.
         </h1>
         <div className="flex flex-col gap-2">
-          <p className="text-sm sm:text-base leading-normal">
+          <p className="text-sm sm:text-base leading-relaxed">
             i build things on the internet. helping robots take over the world.
           </p>
-          <p className="text-sm sm:text-base leading-normal">
+          <p className="text-sm sm:text-base leading-relaxed">
             when i{"'"}m not building, you can find me reading, exploring
             low-level, or thinking about what makes great businesses.
           </p>
@@ -30,7 +30,7 @@ export default function Home() {
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           01. what i{"'"}m doing rn
         </h2>
-        <ul className="text-sm sm:text-base leading-normal">
+        <ul className="text-sm sm:text-base leading-relaxed">
           <li>- bachelors in cs + ml</li>
           <li>- learning cuda, maths, and optimisation</li>
           <li>- studying low level systems and parallel programming</li>
@@ -42,7 +42,7 @@ export default function Home() {
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           02. what i{"'"}ve done
         </h2>
-        <ul className="text-sm sm:text-base leading-normal">
+        <ul className="text-sm sm:text-base leading-relaxed">
           <li>- built a web3 startup, raised $60,000. when i was 17</li>
           <li>- built a tiny minecraft server hosting, made a whopping $8,000. i was 15</li>
           <li>- featured on young ai devs on cnbc tv18 by meta</li>
@@ -62,7 +62,7 @@ export default function Home() {
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           03. stuff i{"'"}ve built
         </h2>
-        <ul className="text-sm sm:text-base leading-normal">
+        <ul className="text-sm sm:text-base leading-relaxed">
           <li>
             -{' '}
             <a
@@ -83,6 +83,16 @@ export default function Home() {
             </a>
             : built a social calendar for friends. no one shared their schedule{' '}
             {':('}
+          </li>
+          <li>
+            -{' '}
+            <a
+              href="https://github.com/janaSunrise/mathsidian"
+              className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+            >
+              mathsidian
+            </a>
+            : my take on math tooling for obsidian. abandoned bec no time.
           </li>
         </ul>
       </section>
