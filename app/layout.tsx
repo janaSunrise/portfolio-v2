@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { JetBrains_Mono, Playfair_Display } from 'next/font/google';
 
 import { Navbar } from '@/components/navbar';
+import { QueryProvider } from '@/providers/query-provider';
 import { ThemeProvider } from '@/providers/theme-provider';
 
 import './globals.css';
@@ -31,19 +32,21 @@ export default function RootLayout({
       <body
         className={`${jetbrainsMono.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="min-h-screen flex flex-col items-center px-6 pt-4 bg-background text-foreground">
-            <div className="w-full max-w-2xl space-y-6">
-              <Navbar />
-              {children}
+        <QueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="min-h-screen flex flex-col items-center px-6 py-4 bg-background text-foreground">
+              <div className="w-full max-w-2xl space-y-6">
+                <Navbar />
+                {children}
+              </div>
             </div>
-          </div>
-        </ThemeProvider>
+          </ThemeProvider>
+        </QueryProvider>
       </body>
     </html>
   );

@@ -1,22 +1,24 @@
 import { Clock } from '@/components/clock';
+import { Spotify } from '@/components/spotify';
 
 export default function Home() {
   return (
     <>
       <section className="flex flex-col">
-        <div className="flex items-center gap-2 text-xs sm:text-sm uppercase tracking-widest mb-4">
+        <div className="flex items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-4">
           <span>Vellore, India</span>
           <span>•</span>
           <Clock />
+          <Spotify />
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight mb-6">
           hey, i{"'"}m sunrit.
         </h1>
         <div className="flex flex-col gap-2">
-          <p className="text-sm sm:text-base leading-relaxed">
+          <p className="text-sm sm:text-base leading-normal">
             i build things on the internet. helping robots take over the world.
           </p>
-          <p className="text-sm sm:text-base leading-relaxed">
+          <p className="text-sm sm:text-base leading-normal">
             when i{"'"}m not building, you can find me reading, exploring
             low-level, or thinking about what makes great businesses.
           </p>
@@ -25,10 +27,10 @@ export default function Home() {
 
       {/* 01. what i'm doing rn */}
       <section className="flex flex-col gap-2">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-widest">
+        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           01. what i{"'"}m doing rn
         </h2>
-        <ul className="text-sm sm:text-base leading-relaxed">
+        <ul className="text-sm sm:text-base leading-normal">
           <li>- bachelors in cs + ml</li>
           <li>- learning cuda, maths, and optimisation</li>
           <li>- studying low level systems and parallel programming</li>
@@ -37,10 +39,10 @@ export default function Home() {
 
       {/* 02. what i've done */}
       <section className="flex flex-col gap-2">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-widest">
+        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           02. what i{"'"}ve done
         </h2>
-        <ul className="text-sm sm:text-base leading-relaxed">
+        <ul className="text-sm sm:text-base leading-normal">
           <li>- built a startup, raised $60,000. all when i was 17.</li>
           <li>- featured on cnbc tv18 by meta as young ai devs.</li>
           <li>
@@ -56,10 +58,10 @@ export default function Home() {
 
       {/* 03. stuff i've built */}
       <section className="flex flex-col gap-2">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-widest">
+        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           03. stuff i{"'"}ve built
         </h2>
-        <ul className="text-sm sm:text-base leading-relaxed">
+        <ul className="text-sm sm:text-base leading-normal">
           <li>
             -{' '}
             <a
