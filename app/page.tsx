@@ -43,16 +43,17 @@ export default function Home() {
           02. what i{"'"}ve done
         </h2>
         <ul className="text-sm sm:text-base leading-normal">
-          <li>- built a startup, raised $60,000. all when i was 17.</li>
-          <li>- featured on cnbc tv18 by meta as young ai devs.</li>
+          <li>- built a web3 startup, raised $60,000. when i was 17</li>
+          <li>- built a tiny minecraft server hosting, made a whopping $8,000. i was 15</li>
+          <li>- featured on young ai devs on cnbc tv18 by meta</li>
           <li>
             - went on a hackathon streak, winner/runner up in 5/5 in a row.
           </li>
           <li>
             - (almost) a national finalist in spell bee (among 200k) when i was
-            12.
+            12
           </li>
-          <li>- partied in a different city, the night before my finals</li>
+          <li>- partied @ ibw{"'25"} in a diff city, the night before my finals</li>
         </ul>
       </section>
 
