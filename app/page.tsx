@@ -1,6 +1,17 @@
 import { Clock } from '@/components/clock';
 import { Spotify } from '@/components/spotify';
 
+function Link({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      href={href}
+      className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+    >
+      {children}
+    </a>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -45,8 +56,14 @@ export default function Home() {
           02. what i{"'"}ve done
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
-          <li>- built a web3 startup, raised $60,000. when i was 17.</li>
-          <li>- built a tiny minecraft server hosting, made a whopping $8,000. i was 15.</li>
+          <li>
+            - <Link href="https://github.com/0xSaturn">[0xsaturn]</Link>: built
+            a web3 startup, raised $60,000. when i was 17.
+          </li>
+          <li>
+            - built a tiny minecraft server hosting, made a whopping $8,000. i
+            was 15.
+          </li>
           <li>- featured on young ai devs on cnbc tv18 by meta</li>
           <li>
             - went on a hackathon streak, winner/runner up in 5/5 in a row.
@@ -55,7 +72,9 @@ export default function Home() {
             - (almost) a national finalist in spell bee (among 200k) when i was
             12
           </li>
-          <li>- partied @ ibw{"'25"} in a diff city, the night before my finals</li>
+          <li>
+            - partied @ ibw{"'25"} in a diff city, the night before my finals
+          </li>
         </ul>
       </section>
 
@@ -66,35 +85,26 @@ export default function Home() {
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>
-            -{' '}
-            <a
-              href="https://github.com/janaSunrise/mactop"
-              className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
-            >
-              [mactop]
-            </a>
+            - <Link href="https://github.com/janaSunrise/mactop">[mactop]</Link>
             : built an apple silicon monitoring tui
           </li>
           <li>
-            -{' '}
-            <a
-              href="#"
-              className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
-            >
-              [socal]
-            </a>
-            : built a social calendar for friends. no one shared their schedule{' '}
-            {':('}
+            - <Link href="#">[socal]</Link>: built a social calendar for
+            friends. no one shared their schedule {':('}
           </li>
           <li>
             -{' '}
-            <a
-              href="https://github.com/janaSunrise/mathsidian"
-              className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
-            >
+            <Link href="https://github.com/janaSunrise/mathsidian">
               [mathsidian]
-            </a>
+            </Link>
             : my take on math tooling for obsidian. abandoned bec no time.
+          </li>
+          <li>
+            -{' '}
+            <Link href="https://github.com/janaSunrise/spotify-playing-readme">
+              [spotify-playing-readme]
+            </Link>
+            : display your spotify listening with a beautiful widget.
           </li>
         </ul>
       </section>
