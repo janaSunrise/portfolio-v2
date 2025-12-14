@@ -24,7 +24,7 @@ export default function Home() {
             <Spotify />
           </div>
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight mb-8">
           hey, i{"'"}m sunrit.
         </h1>
         <div className="flex flex-col gap-2">
@@ -61,8 +61,7 @@ export default function Home() {
             a web3 startup, raised $60,000. when i was 17.
           </li>
           <li>
-            - built a tiny minecraft server hosting, made a whopping $8,000. i
-            was 15.
+            - built a tiny minecraft server hosting, made $8,000. i was 15.
           </li>
           <li>- featured on young ai devs on cnbc tv18 by meta</li>
           <li>
