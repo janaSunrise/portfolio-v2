@@ -13,7 +13,7 @@ export function Navbar() {
       <Link href="/" className="text-lg font-bold tracking-tight">
         ~/.sunrit
       </Link>
-      <div className="flex items-center gap-2 sm:gap-4 decoration-2">
+      <div className="flex items-center gap-2 sm:gap-4">
         <Link
           href="/about"
           className="text-xs sm:text-sm hover:underline underline-offset-4 transition-all"

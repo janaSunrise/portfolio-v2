@@ -39,8 +39,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="min-h-screen flex flex-col items-center px-6 pt-8 pb-8 bg-background text-foreground">
-              <div className="w-full max-w-2xl space-y-4">
+            <div className="min-h-screen flex flex-col items-center px-6 md:px-8 pt-8 pb-8 bg-background text-foreground">
+              <div className="w-full max-w-2xl space-y-6">
                 <Navbar />
                 {children}
               </div>

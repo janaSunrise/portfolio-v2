@@ -38,7 +38,7 @@ export function Spotify() {
       className="flex items-center gap-2 transition-opacity group underline-offset-4"
     >
       <div
-        className={`w-1.5 h-1.5 rounded-full ${isPlaying ? 'bg-green-500' : 'bg-yellow-500'}`}
+        className={`w-1 h-1 rounded-full ${isPlaying ? 'bg-green-500' : 'bg-yellow-500'}`}
       />
       <span className="truncate max-w-xs group-hover:underline">{track}</span>
       <span className="opacity-70 text-xs truncate">{artist}</span>

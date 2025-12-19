@@ -5,7 +5,7 @@ function Link({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <a
       href={href}
-      className="underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+      className="underline underline-offset-4 hover:decoration-2 transition-all"
     >
       {children}
     </a>
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col">
-        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-4">
+        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-6">
           <span>Vellore, India</span>
           <span>•</span>
           <Clock />
@@ -24,7 +24,7 @@ export default function Home() {
             <Spotify />
           </div>
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight mb-8">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-balance font-medium font-serif tracking-tight mb-6">
           hey, i{"'"}m sunrit.
         </h1>
         <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ export default function Home() {
       {/* 01. what i'm doing rn */}
       <section className="flex flex-col gap-2">
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
-          01. what i{"'"}m doing rn
+          01. what im doing rn
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>- bachelors in cs + ml</li>
