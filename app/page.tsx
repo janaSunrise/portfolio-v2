@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* 01. what i'm doing rn */}
-      <section className="flex flex-col gap-2">
+      <section className="flex flex-col gap-4">
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           01. what im doing rn
         </h2>
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* 02. what i've done */}
-      <section className="flex flex-col gap-2">
+      <section className="flex flex-col gap-4">
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
           02. what i{"'"}ve done
         </h2>
@@ -77,10 +77,70 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* 03. stuff i've built */}
+      {/* 03. where i've worked */}
+      <section className="flex flex-col gap-4">
+        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
+          03. where i{"'"}ve worked
+        </h2>
+        <ul className="flex flex-col gap-4">
+          <li>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <h3 className="font-medium text-sm sm:text-base">full-stack swe @ roofer.com</h3>
+              <span className="text-xs sm:text-sm">aug {"'"}23 - apr {"'"}24</span>
+            </div>
+            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+              built cv models for roof detection, 20% cost efficiency. worked on new auth and billing infra, handled 50k+ users..
+            </p>
+          </li>
+
+          <li>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <h3 className="font-medium text-sm sm:text-base">founding engineer @ 0xSaturn</h3>
+              <span className="text-xs sm:text-sm">feb {"'"}22 - dec {"'"}22</span>
+            </div>
+            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+              built ethereum smart contracts & dapps, created automation tools for blockchain deployment, secured $60k from polygon.
+            </p>
+          </li>
+
+          <li>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <h3 className="font-medium text-sm sm:text-base">full-stack swe @ vertex software</h3>
+              <span className="text-xs sm:text-sm">oct {"'"}20 - nov {"'"}23</span>
+            </div>
+            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+              shipped 10+ enterprise projects, improved performance by 30-50%. optimized systems for 30-50% performance gains.
+              automated deployments, cut deployment times by 15-20%.
+            </p>
+          </li>
+
+          <li>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <h3 className="font-medium text-sm sm:text-base">cloud engineer @ opens.wiki</h3>
+              <span className="text-xs sm:text-sm">oct {"'"}22 - dec {"'"}22</span>
+            </div>
+            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+              orchestrated aws infra with terraform, designed scalable architecture, cut costs by 20%, increased perf by 10%.
+              strategized blockchain modularity in cloud.
+            </p>
+          </li>
+
+          <li>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <h3 className="font-medium text-sm sm:text-base">ml researcher @ Airis4D</h3>
+              <span className="text-xs sm:text-sm">jul {"'"}21 - oct {"'"}21</span>
+            </div>
+            <p className="text-xs sm:text-sm text-foreground/60 leading-relaxed">
+              replicated medical cnn papers. built antibiotic effectiveness model, 95% accuracy. improved model v2: 30% faster training, 15% better accuracy.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      {/* 04. stuff i've built */}
       <section className="flex flex-col gap-2">
         <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
-          03. stuff i{"'"}ve built
+          04. stuff i{"'"}ve built
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>

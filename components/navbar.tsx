@@ -37,7 +37,7 @@ export function Navbar() {
                   <span className="w-1.5 h-1.5 bg-foreground shrink-0 transition-all duration-200" />
                 )}
                 {!isActive && (
-                  <span className="w-1.5 h-1.5 shrink-0 opacity-0 group-hover:opacity-100 group-hover:bg-foreground/30 transition-all duration-200" />
+                  <span className="w-1.5 h-1.5 shrink-0 opacity-0 group-hover:opacity-100 group-hover:bg-foreground/50 transition-all duration-200" />
                 )}
                 <span>{link.label}</span>
               </Link>
