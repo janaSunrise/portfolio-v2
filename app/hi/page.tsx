@@ -14,7 +14,7 @@ export default function SayHi() {
   return (
     <section className="flex flex-col gap-4 sm:gap-6">
       <div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-balance font-medium font-serif tracking-tight">
           say hi
         </h1>
       </div>

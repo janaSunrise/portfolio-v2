@@ -16,6 +16,9 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-balance font-medium font-serif tracking-tight mb-8">
+          hey, i{"'"}m sunrit.
+        </h1>
         <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-6">
           <span>Vellore, India</span>
           <span>•</span>
@@ -24,9 +27,6 @@ export default function Home() {
             <Spotify />
           </div>
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-balance font-medium font-serif tracking-tight mb-6">
-          hey, i{"'"}m sunrit.
-        </h1>
         <div className="flex flex-col gap-2">
           <p className="text-sm sm:text-base leading-relaxed">
             i build things on the internet. helping robots take over the world.
@@ -96,7 +96,7 @@ export default function Home() {
             <Link href="https://github.com/janaSunrise/mathsidian">
               [mathsidian]
             </Link>
-            : my take on math tooling for obsidian. abandoned bec no time.
+            : my take on math tooling for obsidian. abandoned bc no time.
           </li>
           <li>
             -{' '}
