@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-balance font-medium font-serif tracking-tight mb-8">
+        <h1 className="text-5xl md:text-6xl text-balance font-medium font-serif tracking-tight mb-8">
           hey, i{"'"}m sunrit.
         </h1>
         <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-6">
@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* 01. what i'm doing rn */}
       <section className="flex flex-col gap-4">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
+        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
           01. what im doing rn
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* 02. what i've done */}
       <section className="flex flex-col gap-4">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
+        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
           02. what i{"'"}ve done
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
@@ -79,13 +79,13 @@ export default function Home() {
 
       {/* 03. where i've worked */}
       <section className="flex flex-col gap-4">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
+        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
           03. where i{"'"}ve worked
         </h2>
         <ul className="flex flex-col gap-4">
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-medium text-sm sm:text-base">full-stack swe @ roofer.com</h3>
+              <h3 className="font-bold text-sm sm:text-base">full-stack swe @ roofer.com</h3>
               <span className="text-sm sm:text-base">aug {"'"}23 - apr {"'"}24</span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
@@ -95,7 +95,7 @@ export default function Home() {
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-medium text-sm sm:text-base">founding engineer @ 0xSaturn</h3>
+              <h3 className="font-bold text-sm sm:text-base">founding engineer @ 0xSaturn</h3>
               <span className="text-sm sm:text-base">feb {"'"}22 - dec {"'"}22</span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
@@ -105,7 +105,7 @@ export default function Home() {
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-medium text-sm sm:text-base">full-stack swe @ vertex software</h3>
+              <h3 className="font-bold text-sm sm:text-base">full-stack swe @ vertex software</h3>
               <span className="text-sm sm:text-base">oct {"'"}20 - nov {"'"}23</span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
@@ -116,7 +116,7 @@ export default function Home() {
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-medium text-sm sm:text-base">cloud engineer @ opens.wiki</h3>
+              <h3 className="font-bold text-sm sm:text-base">cloud engineer @ opens.wiki</h3>
               <span className="text-sm sm:text-base">oct {"'"}22 - dec {"'"}22</span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
@@ -127,7 +127,7 @@ export default function Home() {
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-medium text-sm sm:text-base">ml researcher @ Airis4D</h3>
+              <h3 className="font-bold text-sm sm:text-base">ml researcher @ Airis4D</h3>
               <span className="text-sm sm:text-base">jul {"'"}21 - oct {"'"}21</span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/60 leading-relaxed">
@@ -139,7 +139,7 @@ export default function Home() {
 
       {/* 04. stuff i've built */}
       <section className="flex flex-col gap-2">
-        <h2 className="text-sm sm:text-base font-bold uppercase tracking-normal">
+        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
           04. stuff i{"'"}ve built
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
