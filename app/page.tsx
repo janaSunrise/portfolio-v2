@@ -32,6 +32,11 @@ export default function Home() {
             i build things on the internet. helping robots take over the world.
           </p>
           <p className="text-sm sm:text-base leading-relaxed">
+            i{"'"}m a backend and machine learning engineer, tinkering around with low-level
+            systems way too much. mostly focused on writing clean code, and designing better
+            systems.
+          </p>
+          <p className="text-sm sm:text-base leading-relaxed">
             when i{"'"}m not building, you can find me reading, exploring
             low-level, or thinking about what makes great businesses.
           </p>
@@ -46,7 +51,8 @@ export default function Home() {
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>- bachelors in cs + ml</li>
           <li>- learning cuda, maths, and optimisation</li>
-          <li>- studying low level systems and parallel programming</li>
+          <li>- shipping at a stealth startup as a founding engineer</li>
+          <li>- building an app studio with my friend</li>
         </ul>
       </section>
 
@@ -82,94 +88,75 @@ export default function Home() {
         <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
           03. where i{"'"}ve worked
         </h2>
-        <ul className="flex flex-col gap-4">
-          <li className="border border-foreground/20 rounded-lg p-5">
-            <div className="flex items-start justify-between gap-4 mb-1">
-              <h3 className="font-bold text-base sm:text-lg">
-                full-stack swe
-              </h3>
-              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
-                aug {"'"}23 – apr {"'"}24
+        <ul className="flex flex-col gap-6">
+          <li>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-bold text-base sm:text-lg">full-stack swe</h3>
+              <span className="text-sm sm:text-base text-foreground/50 shrink-0">
+                aug {"'"}23 - apr {"'"}24
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
-              roofer.com
-            </p>
-            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
-              built cv models for roof detection, 20% cost efficiency. worked on
-              new auth and billing infra, handled 50k+ users.
+            <p className="text-sm sm:text-base text-foreground/50">roofer.com</p>
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
+              built cv models for roof detection, gained 20% cost efficiency. worked on
+              new auth and billing infra that handled 50k+ users concurrently.
             </p>
           </li>
 
-          <li className="border border-foreground/20 rounded-lg p-5">
-            <div className="flex items-start justify-between gap-4 mb-1">
-              <h3 className="font-bold text-base sm:text-lg">
-                founding engineer
-              </h3>
-              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
-                feb {"'"}22 – dec {"'"}22
+          <li>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-bold text-base sm:text-lg">founding engineer</h3>
+              <span className="text-sm sm:text-base text-foreground/50 shrink-0">
+                feb {"'"}22 - dec {"'"}22
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
-              0xSaturn
-            </p>
-            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-foreground/50">0xSaturn</p>
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
               built ethereum smart contracts & dapps, created automation tools
-              for blockchain deployment, secured $60k from polygon.
+              for blockchain deployment and creating custom infra and protocols.
+              secured $60k from polygon.
             </p>
           </li>
 
-          <li className="border border-foreground/20 rounded-lg p-5">
-            <div className="flex items-start justify-between gap-4 mb-1">
-              <h3 className="font-bold text-base sm:text-lg">
-                full-stack swe
-              </h3>
-              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
-                oct {"'"}20 – nov {"'"}23
+          <li>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-bold text-base sm:text-lg">full-stack swe</h3>
+              <span className="text-sm sm:text-base text-foreground/50 shrink-0">
+                oct {"'"}20 - nov {"'"}23
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
-              vertex software
-            </p>
-            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-foreground/50">vertex software</p>
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
               shipped 10+ enterprise projects. optimized systems for 30-50%
               performance gains. automated deployments, cut deployment times by
-              15-20%.
+              15-20%. integrated ml models into production while cutting down costs by 40%.
             </p>
           </li>
 
-          <li className="border border-foreground/20 rounded-lg p-5">
-            <div className="flex items-start justify-between gap-4 mb-1">
-              <h3 className="font-bold text-base sm:text-lg">
-                cloud engineer
-              </h3>
-              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
-                oct {"'"}22 – dec {"'"}22
+          <li>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-bold text-base sm:text-lg">cloud engineer</h3>
+              <span className="text-sm sm:text-base text-foreground/50 shrink-0">
+                oct {"'"}22 - dec {"'"}22
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
-              opens.wiki
-            </p>
-            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-foreground/50">opens.wiki</p>
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
               orchestrated aws infra with terraform, designed scalable
               architecture, cut costs by 20%, increased perf by 10%. strategized
               blockchain modularity in cloud.
             </p>
           </li>
 
-          <li className="border border-foreground/20 rounded-lg p-5">
-            <div className="flex items-start justify-between gap-4 mb-1">
-              <h3 className="font-bold text-base sm:text-lg">
-                ml researcher
-              </h3>
-              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
-                jul {"'"}21 – oct {"'"}21
+          <li>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-bold text-base sm:text-lg">ml researcher</h3>
+              <span className="text-sm sm:text-base text-foreground/50 shrink-0">
+                jul {"'"}21 - oct {"'"}21
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
-              Airis4D
-            </p>
-            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-foreground/50">Airis4D</p>
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
               replicated medical cnn papers. built antibiotic effectiveness
               model, 95% accuracy. improved model v2: 30% faster training, 15%
               better accuracy.
@@ -184,6 +171,21 @@ export default function Home() {
           04. stuff i{"'"}ve built
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
+          <li>
+            -{' '}
+            <Link href="https://github.com/janaSunrise/courier">[courier]</Link>
+            : http client tui. postman but make it terminal.
+          </li>
+          <li>
+            -{' '}
+            <Link href="https://github.com/janaSunrise/valspec">[valspec]</Link>
+            : secrets management app. because .env files are scary.
+          </li>
+          <li>
+            -{' '}
+            <Link href="https://github.com/janaSunrise/radui">[radui]</Link>:
+            terminal redis client in rust. redis-cli but actually usable.
+          </li>
           <li>
             - <Link href="https://github.com/janaSunrise/mactop">[mactop]</Link>
             : built an apple silicon monitoring tui
