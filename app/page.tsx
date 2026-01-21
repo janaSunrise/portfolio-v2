@@ -85,53 +85,79 @@ export default function Home() {
         <ul className="flex flex-col gap-4">
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">full-stack swe @ roofer.com</h3>
-              <span className="text-sm sm:text-base">aug {"'"}23 - apr {"'"}24</span>
+              <h3 className="font-bold text-sm sm:text-base">
+                full-stack swe @ roofer.com
+              </h3>
+              <span className="text-sm sm:text-base">
+                aug {"'"}23 - apr {"'"}24
+              </span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
-              built cv models for roof detection, 20% cost efficiency. worked on new auth and billing infra, handled 50k+ users..
+              built cv models for roof detection, 20% cost efficiency. worked on
+              new auth and billing infra, handled 50k+ users..
             </p>
           </li>
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">founding engineer @ 0xSaturn</h3>
-              <span className="text-sm sm:text-base">feb {"'"}22 - dec {"'"}22</span>
+              <h3 className="font-bold text-sm sm:text-base">
+                founding engineer @ 0xSaturn
+              </h3>
+              <span className="text-sm sm:text-base">
+                feb {"'"}22 - dec {"'"}22
+              </span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
-              built ethereum smart contracts & dapps, created automation tools for blockchain deployment, secured $60k from polygon.
+              built ethereum smart contracts & dapps, created automation tools
+              for blockchain deployment, secured $60k from polygon.
             </p>
           </li>
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">full-stack swe @ vertex software</h3>
-              <span className="text-sm sm:text-base">oct {"'"}20 - nov {"'"}23</span>
+              <h3 className="font-bold text-sm sm:text-base">
+                full-stack swe @ vertex software
+              </h3>
+              <span className="text-sm sm:text-base">
+                oct {"'"}20 - nov {"'"}23
+              </span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
-              shipped 10+ enterprise projects. optimized systems for 30-50% performance gains.
-              automated deployments, cut deployment times by 15-20%.
+              shipped 10+ enterprise projects. optimized systems for 30-50%
+              performance gains. automated deployments, cut deployment times by
+              15-20%.
             </p>
           </li>
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">cloud engineer @ opens.wiki</h3>
-              <span className="text-sm sm:text-base">oct {"'"}22 - dec {"'"}22</span>
+              <h3 className="font-bold text-sm sm:text-base">
+                cloud engineer @ opens.wiki
+              </h3>
+              <span className="text-sm sm:text-base">
+                oct {"'"}22 - dec {"'"}22
+              </span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
-              orchestrated aws infra with terraform, designed scalable architecture, cut costs by 20%, increased perf by 10%.
-              strategized blockchain modularity in cloud.
+              orchestrated aws infra with terraform, designed scalable
+              architecture, cut costs by 20%, increased perf by 10%. strategized
+              blockchain modularity in cloud.
             </p>
           </li>
 
           <li>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">ml researcher @ Airis4D</h3>
-              <span className="text-sm sm:text-base">jul {"'"}21 - oct {"'"}21</span>
+              <h3 className="font-bold text-sm sm:text-base">
+                ml researcher @ Airis4D
+              </h3>
+              <span className="text-sm sm:text-base">
+                jul {"'"}21 - oct {"'"}21
+              </span>
             </div>
             <p className="text-xs sm:text-sm text-foreground/60 leading-relaxed">
-              replicated medical cnn papers. built antibiotic effectiveness model, 95% accuracy. improved model v2: 30% faster training, 15% better accuracy.
+              replicated medical cnn papers. built antibiotic effectiveness
+              model, 95% accuracy. improved model v2: 30% faster training, 15%
+              better accuracy.
             </p>
           </li>
         </ul>
