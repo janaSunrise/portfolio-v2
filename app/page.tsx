@@ -83,45 +83,54 @@ export default function Home() {
           03. where i{"'"}ve worked
         </h2>
         <ul className="flex flex-col gap-4">
-          <li>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">
-                full-stack swe @ roofer.com
+          <li className="border border-foreground/20 rounded-lg p-5">
+            <div className="flex items-start justify-between gap-4 mb-1">
+              <h3 className="font-bold text-base sm:text-lg">
+                full-stack swe
               </h3>
-              <span className="text-sm sm:text-base">
-                aug {"'"}23 - apr {"'"}24
+              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
+                aug {"'"}23 – apr {"'"}24
               </span>
             </div>
+            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
+              roofer.com
+            </p>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
               built cv models for roof detection, 20% cost efficiency. worked on
-              new auth and billing infra, handled 50k+ users..
+              new auth and billing infra, handled 50k+ users.
             </p>
           </li>
 
-          <li>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">
-                founding engineer @ 0xSaturn
+          <li className="border border-foreground/20 rounded-lg p-5">
+            <div className="flex items-start justify-between gap-4 mb-1">
+              <h3 className="font-bold text-base sm:text-lg">
+                founding engineer
               </h3>
-              <span className="text-sm sm:text-base">
-                feb {"'"}22 - dec {"'"}22
+              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
+                feb {"'"}22 – dec {"'"}22
               </span>
             </div>
+            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
+              0xSaturn
+            </p>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
               built ethereum smart contracts & dapps, created automation tools
               for blockchain deployment, secured $60k from polygon.
             </p>
           </li>
 
-          <li>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">
-                full-stack swe @ vertex software
+          <li className="border border-foreground/20 rounded-lg p-5">
+            <div className="flex items-start justify-between gap-4 mb-1">
+              <h3 className="font-bold text-base sm:text-lg">
+                full-stack swe
               </h3>
-              <span className="text-sm sm:text-base">
-                oct {"'"}20 - nov {"'"}23
+              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
+                oct {"'"}20 – nov {"'"}23
               </span>
             </div>
+            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
+              vertex software
+            </p>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
               shipped 10+ enterprise projects. optimized systems for 30-50%
               performance gains. automated deployments, cut deployment times by
@@ -129,15 +138,18 @@ export default function Home() {
             </p>
           </li>
 
-          <li>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">
-                cloud engineer @ opens.wiki
+          <li className="border border-foreground/20 rounded-lg p-5">
+            <div className="flex items-start justify-between gap-4 mb-1">
+              <h3 className="font-bold text-base sm:text-lg">
+                cloud engineer
               </h3>
-              <span className="text-sm sm:text-base">
-                oct {"'"}22 - dec {"'"}22
+              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
+                oct {"'"}22 – dec {"'"}22
               </span>
             </div>
+            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
+              opens.wiki
+            </p>
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
               orchestrated aws infra with terraform, designed scalable
               architecture, cut costs by 20%, increased perf by 10%. strategized
@@ -145,16 +157,19 @@ export default function Home() {
             </p>
           </li>
 
-          <li>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-              <h3 className="font-bold text-sm sm:text-base">
-                ml researcher @ Airis4D
+          <li className="border border-foreground/20 rounded-lg p-5">
+            <div className="flex items-start justify-between gap-4 mb-1">
+              <h3 className="font-bold text-base sm:text-lg">
+                ml researcher
               </h3>
-              <span className="text-sm sm:text-base">
-                jul {"'"}21 - oct {"'"}21
+              <span className="text-xs sm:text-sm text-foreground/50 shrink-0">
+                jul {"'"}21 – oct {"'"}21
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-foreground/60 leading-relaxed">
+            <p className="text-xs sm:text-sm text-foreground/50 mb-3">
+              Airis4D
+            </p>
+            <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
               replicated medical cnn papers. built antibiotic effectiveness
               model, 95% accuracy. improved model v2: 30% faster training, 15%
               better accuracy.
