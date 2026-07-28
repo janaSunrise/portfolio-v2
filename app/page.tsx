@@ -52,6 +52,7 @@ export default function Home() {
           <li>- bachelors in cs + ml</li>
           <li>- learning cuda and maths</li>
           <li>- spending more time with my guitar</li>
+          <li>- studying japanese & chinese for the fun of it</li>
         </ul>
       </section>
 
