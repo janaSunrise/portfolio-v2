@@ -43,16 +43,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 01. what i'm doing rn */}
+      {/* 01. what i'm doing */}
       <section className="flex flex-col gap-4">
         <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
-          01. what im doing rn
+          01. what im doing
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>- bachelors in cs + ml</li>
-          <li>- learning cuda, maths, and optimisation</li>
-          <li>- shipping at a stealth startup as a founding engineer</li>
-          <li>- building an app studio with my friend</li>
+          <li>- learning cuda and maths</li>
+          <li>- spending more time with my guitar</li>
         </ul>
       </section>
 
@@ -63,22 +62,22 @@ export default function Home() {
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>
-            - <Link href="https://github.com/0xSaturn">[0xsaturn]</Link>: built
+            - <Link href="https://github.com/0xSaturn">0xsaturn</Link>: built
             a web3 startup, raised $60,000. when i was 17.
           </li>
           <li>
             - built a tiny minecraft server hosting, made $8,000. i was 15.
           </li>
+          <li>- accepted into SPC{"'"}s -1 to 0 program. couldn{"'"}t make it bc of college.</li>
           <li>- featured on young ai devs on cnbc tv18 by meta</li>
           <li>
             - went on a hackathon streak, winner/runner up in 5/5 in a row.
           </li>
           <li>
-            - (almost) a national finalist in spell bee (among 200k) when i was
-            12
+            - national finalist in spell bee (among 200k) when i was 12
           </li>
           <li>
-            - partied @ ibw{"'25"} in a diff city, the night before my finals
+            - partied @ ibw{"'"}25 in a diff city, the night before my finals
           </li>
         </ul>
       </section>
@@ -89,6 +88,23 @@ export default function Home() {
           03. where i{"'"}ve worked
         </h2>
         <ul className="flex flex-col gap-6">
+          <li>
+            <div className="flex items-baseline justify-between gap-4">
+              <h3 className="font-bold text-base sm:text-lg">founding engineer</h3>
+              <span className="text-sm sm:text-base text-foreground/50 shrink-0">
+                dec {"'"}25 - may {"'"}26
+              </span>
+            </div>
+            <p className="text-sm sm:text-base text-foreground/50">
+              fiber
+            </p>
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
+              re-architected a multi-tenant dealership platform and shipped 15+ core modules.
+              built AI-native features, resilient auth and billing infra, and improved load times
+              by 30-50% while cutting infrastructure costs by 20%.
+            </p>
+          </li>
+
           <li>
             <div className="flex items-baseline justify-between gap-4">
               <h3 className="font-bold text-base sm:text-lg">full-stack swe</h3>
