@@ -1,16 +1,6 @@
 import { Clock } from '@/components/clock';
 import { Spotify } from '@/components/spotify';
-
-function Link({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a
-      href={href}
-      className="underline underline-offset-4 hover:decoration-2 transition-all"
-    >
-      {children}
-    </a>
-  );
-}
+import { TextLink } from '@/components/text-link';
 
 export default function Home() {
   return (
@@ -63,8 +53,8 @@ export default function Home() {
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>
-            - <Link href="https://github.com/0xSaturn">0xsaturn</Link>: built a
-            web3 startup, raised $60,000. when i was 17.
+            - <TextLink href="https://github.com/0xSaturn">0xsaturn</TextLink>:
+            built a web3 startup, raised $60,000. when i was 17.
           </li>
           <li>
             - built a tiny minecraft server hosting, made $8,000. i was 15.
@@ -92,38 +82,48 @@ export default function Home() {
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>
             -{' '}
-            <Link href="https://github.com/janaSunrise/courier">[courier]</Link>
+            <TextLink href="https://github.com/janaSunrise/courier">
+              [courier]
+            </TextLink>
             : http client tui. postman but make it terminal.
           </li>
           <li>
             -{' '}
-            <Link href="https://github.com/janaSunrise/valspec">[valspec]</Link>
+            <TextLink href="https://github.com/janaSunrise/valspec">
+              [valspec]
+            </TextLink>
             : secrets management app. because .env files are scary.
           </li>
           <li>
-            - <Link href="https://github.com/janaSunrise/radui">[radui]</Link>:
-            terminal redis client in rust. redis-cli but actually usable.
+            -{' '}
+            <TextLink href="https://github.com/janaSunrise/radui">
+              [radui]
+            </TextLink>
+            : terminal redis client in rust. redis-cli but actually usable.
           </li>
           <li>
-            - <Link href="https://github.com/janaSunrise/mactop">[mactop]</Link>
+            -{' '}
+            <TextLink href="https://github.com/janaSunrise/mactop">
+              [mactop]
+            </TextLink>
             : built an apple silicon monitoring tui
           </li>
           <li>
-            - <Link href="#">[socal]</Link>: built a social calendar for
+            - <TextLink href="#">[socal]</TextLink>: built a social calendar for
             friends. no one shared their schedule {':('}
           </li>
           <li>
             -{' '}
-            <Link href="https://github.com/janaSunrise/mathsidian">
+            <TextLink href="https://github.com/janaSunrise/mathsidian">
               [mathsidian]
-            </Link>
+            </TextLink>
             : my take on math tooling for obsidian. abandoned bc no time.
           </li>
           <li>
             -{' '}
-            <Link href="https://github.com/janaSunrise/spotify-playing-readme">
+            <TextLink href="https://github.com/janaSunrise/spotify-playing-readme">
               [spotify-playing-readme]
-            </Link>
+            </TextLink>
             : display your spotify listening with a beautiful widget.
           </li>
         </ul>
