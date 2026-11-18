@@ -19,16 +19,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-sm sm:text-base leading-relaxed">
-            i build things on the internet. helping robots take over the world.
+            the internet{"'"}s my home. i{"'"}m a backend and ml engineer who
+            spends way too much time on low-level systems. right now i{"'"}m
+            working on first principles.
           </p>
           <p className="text-sm sm:text-base leading-relaxed">
-            i{"'"}m a backend and machine learning engineer, tinkering around
-            with low-level systems way too much. mostly focused on writing clean
-            code, and designing better systems.
+            before that i was a founding engineer at two startups, and started
+            one of them at 17.
           </p>
           <p className="text-sm sm:text-base leading-relaxed">
-            when i{"'"}m not building, you can find me reading, exploring
-            low-level, or thinking about what makes great businesses.
+            when i{"'"}m not building, i{"'"}m reading essays that make me
+            think, listening to music, or watching shows.
           </p>
         </div>
       </section>
@@ -82,6 +83,13 @@ export default function Home() {
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>
             -{' '}
+            <TextLink href="https://github.com/janaSunrise/zelda">
+              [zelda]
+            </TextLink>
+            : typescript type checker in rust. tsc but fast.
+          </li>
+          <li>
+            -{' '}
             <TextLink href="https://github.com/janaSunrise/courier">
               [courier]
             </TextLink>
@@ -107,10 +115,6 @@ export default function Home() {
               [mactop]
             </TextLink>
             : built an apple silicon monitoring tui
-          </li>
-          <li>
-            - <TextLink href="#">[socal]</TextLink>: built a social calendar for
-            friends. no one shared their schedule {':('}
           </li>
           <li>
             -{' '}
