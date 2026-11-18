@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
 
+// Cache the response for 30s (ISR) so all visitors share one upstream lookup
+// instead of each open tab hitting Spotify every poll.
+export const revalidate = 30;
+
 interface SpotifyTrack {
   name: string;
   artists: Array<{ name: string }>;
@@ -8,6 +12,7 @@ interface SpotifyTrack {
 
 interface TokenResponse {
   access_token: string;
+  expires_in: number;
 }
 
 interface CurrentlyPlayingResponse {
@@ -26,7 +31,14 @@ interface Track {
   url: string;
 }
 
+// Access tokens live ~1h; reuse one per server instance instead of refreshing per request.
+let cachedToken: { value: string; expiresAt: number } | null = null;
+
 async function getAccessToken(): Promise<string> {
+  if (cachedToken && Date.now() < cachedToken.expiresAt) {
+    return cachedToken.value;
+  }
+
   const clientId = process.env.SPOTIFY_CLIENT_ID;
   const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
   const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
@@ -52,6 +64,11 @@ async function getAccessToken(): Promise<string> {
   }
 
   const data: TokenResponse = await response.json();
+  cachedToken = {
+    value: data.access_token,
+    // refresh a minute early to avoid using a token right as it expires
+    expiresAt: Date.now() + (data.expires_in - 60) * 1000
+  };
   return data.access_token;
 }
 
@@ -109,15 +126,14 @@ async function getLastPlayed(accessToken: string): Promise<Track | null> {
 export async function GET() {
   try {
     const accessToken = await getAccessToken();
-    const [currentlyPlaying, lastPlayed] = await Promise.all([
-      getCurrentlyPlaying(accessToken),
-      getLastPlayed(accessToken)
-    ]);
-
-    const track = currentlyPlaying || lastPlayed;
+    // Only fall back to recently-played when nothing is currently playing.
+    const track =
+      (await getCurrentlyPlaying(accessToken)) ??
+      (await getLastPlayed(accessToken));
     return NextResponse.json({ track });
   } catch (error) {
     console.error('Spotify API error:', error);
+    cachedToken = null;
     return NextResponse.json({ track: null });
   }
 }

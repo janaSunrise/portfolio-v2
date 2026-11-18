@@ -1,15 +1,24 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { useSyncExternalStore } from 'react';
 
 import { useTheme } from 'next-themes';
 import { Link } from 'next-view-transitions';
 
+const noopSubscribe = () => () => {};
+
 export function Navbar() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const pathname = usePathname();
 
-  const mounted = typeof window !== 'undefined';
+  // false during SSR and hydration, true afterwards — avoids a hydration mismatch
+  const mounted = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  );
+  const isDark = mounted && resolvedTheme === 'dark';
 
   const links = [
     { href: '/', label: 'home' },
@@ -48,17 +57,18 @@ export function Navbar() {
           );
         })}
       </div>
-      {mounted && (
-        <button
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="text-base sm:text-lg transition-all duration-200 ease-out hover:opacity-70 active:scale-95 p-1.5 rounded-md"
-          aria-label="Toggle theme"
+      <button
+        onClick={() => setTheme(isDark ? 'light' : 'dark')}
+        className="text-base sm:text-lg transition-all duration-200 ease-out hover:opacity-70 active:scale-95 p-1.5 rounded-md"
+        aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+        disabled={!mounted}
+      >
+        <span
+          className={`inline-block transition-opacity duration-200 ease-out ${mounted ? '' : 'opacity-0'}`}
         >
-          <span className="inline-block transition-opacity duration-200 ease-out">
-            {theme === 'dark' ? '○' : '●'}
-          </span>
-        </button>
-      )}
+          {isDark ? '○' : '●'}
+        </span>
+      </button>
     </nav>
   );
 }
