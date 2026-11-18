@@ -57,7 +57,7 @@ export default function Work() {
             <p className="text-sm text-foreground/70">
               {job.role} · {job.period}
             </p>
-            <p className="text-sm sm:text-base leading-relaxed mt-2">
+            <p className="text-xs sm:text-sm leading-relaxed mt-2">
               {job.description}
             </p>
           </li>

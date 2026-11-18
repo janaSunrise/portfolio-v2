@@ -6,6 +6,13 @@ import { useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
 import { Link } from 'next-view-transitions';
 
+const links = [
+  { href: '/', label: 'home' },
+  { href: '/work', label: 'work' },
+  { href: '/library', label: 'library' },
+  { href: '/hi', label: 'say hi' }
+];
+
 const noopSubscribe = () => () => {};
 
 export function Navbar() {
@@ -20,15 +27,8 @@ export function Navbar() {
   );
   const isDark = mounted && resolvedTheme === 'dark';
 
-  const links = [
-    { href: '/', label: 'home' },
-    { href: '/work', label: 'work' },
-    { href: '/library', label: 'library' },
-    { href: '/hi', label: 'say hi' }
-  ];
-
   return (
-    <nav className="flex items-center justify-between pt-4 border-foreground/10">
+    <nav className="flex items-center justify-between pt-4">
       <div className="flex items-center">
         {links.map((link, index) => {
           const isActive = pathname === link.href;
@@ -36,18 +36,19 @@ export function Navbar() {
             <div key={link.href} className="flex items-center">
               <Link
                 href={link.href}
-                className={`text-xs sm:text-sm transition-all duration-200 flex items-center gap-1.5 group ${
+                className={`group flex items-center gap-1.5 text-xs sm:text-sm transition-colors duration-200 ${
                   isActive
                     ? 'text-foreground'
                     : 'text-foreground/50 hover:text-foreground'
                 }`}
               >
-                {isActive && (
-                  <span className="w-1.5 h-1.5 bg-foreground shrink-0 transition-all duration-200" />
-                )}
-                {!isActive && (
-                  <span className="w-1.5 h-1.5 shrink-0 opacity-0 group-hover:opacity-100 group-hover:bg-foreground/50 transition-all duration-200" />
-                )}
+                <span
+                  className={`size-1.5 shrink-0 transition-opacity duration-200 ${
+                    isActive
+                      ? 'bg-foreground'
+                      : 'bg-foreground/50 opacity-0 group-hover:opacity-100'
+                  }`}
+                />
                 <span>{link.label}</span>
               </Link>
               {index < links.length - 1 && (
@@ -59,7 +60,7 @@ export function Navbar() {
       </div>
       <button
         onClick={() => setTheme(isDark ? 'light' : 'dark')}
-        className="text-base sm:text-lg transition-all duration-200 ease-out hover:opacity-70 active:scale-95 p-1.5 rounded-md"
+        className="text-base sm:text-lg transition duration-200 ease-out hover:opacity-70 active:scale-95 p-1.5 rounded-md"
         aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
         disabled={!mounted}
       >

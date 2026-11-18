@@ -75,9 +75,7 @@ export default function Library() {
       </h1>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
-          01. anime
-        </h2>
+        <h2 className="text-base sm:text-lg font-bold uppercase">01. anime</h2>
 
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-3 gap-y-6 sm:gap-x-4">
           {anime.map(show => (
@@ -112,9 +110,7 @@ export default function Library() {
       </div>
 
       <div className="flex flex-col gap-4 mt-4">
-        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
-          02. essays
-        </h2>
+        <h2 className="text-base sm:text-lg font-bold uppercase">02. essays</h2>
 
         <ul className="flex flex-col divide-y divide-foreground/10 border-y border-foreground/10">
           {essays.map(essay => (

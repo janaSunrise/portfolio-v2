@@ -2,6 +2,34 @@ import { Clock } from '@/components/clock';
 import { Spotify } from '@/components/spotify';
 import { TextLink } from '@/components/text-link';
 
+const projects = [
+  {
+    name: 'zelda',
+    description: 'typescript type checker in rust. tsc but fast.'
+  },
+  {
+    name: 'courier',
+    description: 'http client tui. postman but make it terminal.'
+  },
+  {
+    name: 'valspec',
+    description: 'secrets management app. because .env files are scary.'
+  },
+  {
+    name: 'radui',
+    description: 'terminal redis client in rust. redis-cli but actually usable.'
+  },
+  { name: 'mactop', description: 'built an apple silicon monitoring tui' },
+  {
+    name: 'mathsidian',
+    description: 'my take on math tooling for obsidian. abandoned bc no time.'
+  },
+  {
+    name: 'spotify-playing-readme',
+    description: 'display your spotify listening with a beautiful widget.'
+  }
+];
+
 export default function Home() {
   return (
     <>
@@ -9,7 +37,7 @@ export default function Home() {
         <h1 className="text-5xl md:text-6xl text-balance font-medium font-serif tracking-tight mb-8">
           hey, i{"'"}m sunrit.
         </h1>
-        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase tracking-normal mb-6">
+        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase mb-6">
           <span>Vellore, India</span>
           <span>•</span>
           <Clock />
@@ -36,7 +64,7 @@ export default function Home() {
 
       {/* 01. what i'm doing */}
       <section className="flex flex-col gap-4">
-        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
+        <h2 className="text-base sm:text-lg font-bold uppercase">
           01. what im doing
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
@@ -49,7 +77,7 @@ export default function Home() {
 
       {/* 02. what i've done */}
       <section className="flex flex-col gap-4">
-        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
+        <h2 className="text-base sm:text-lg font-bold uppercase">
           02. what i{"'"}ve done
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
@@ -76,60 +104,20 @@ export default function Home() {
       </section>
 
       {/* 03. stuff i've built */}
-      <section className="flex flex-col gap-2">
-        <h2 className="text-base sm:text-lg font-bold uppercase tracking-normal">
+      <section className="flex flex-col gap-4">
+        <h2 className="text-base sm:text-lg font-bold uppercase">
           03. stuff i{"'"}ve built
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/zelda">
-              [zelda]
-            </TextLink>
-            : typescript type checker in rust. tsc but fast.
-          </li>
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/courier">
-              [courier]
-            </TextLink>
-            : http client tui. postman but make it terminal.
-          </li>
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/valspec">
-              [valspec]
-            </TextLink>
-            : secrets management app. because .env files are scary.
-          </li>
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/radui">
-              [radui]
-            </TextLink>
-            : terminal redis client in rust. redis-cli but actually usable.
-          </li>
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/mactop">
-              [mactop]
-            </TextLink>
-            : built an apple silicon monitoring tui
-          </li>
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/mathsidian">
-              [mathsidian]
-            </TextLink>
-            : my take on math tooling for obsidian. abandoned bc no time.
-          </li>
-          <li>
-            -{' '}
-            <TextLink href="https://github.com/janaSunrise/spotify-playing-readme">
-              [spotify-playing-readme]
-            </TextLink>
-            : display your spotify listening with a beautiful widget.
-          </li>
+          {projects.map(project => (
+            <li key={project.name}>
+              -{' '}
+              <TextLink href={`https://github.com/janaSunrise/${project.name}`}>
+                [{project.name}]
+              </TextLink>
+              : {project.description}
+            </li>
+          ))}
         </ul>
       </section>
     </>

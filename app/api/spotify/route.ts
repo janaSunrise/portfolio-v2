@@ -24,7 +24,7 @@ interface RecentlyPlayedResponse {
   items: Array<{ track: SpotifyTrack }>;
 }
 
-interface Track {
+export interface Track {
   isPlaying: boolean;
   track: string;
   artist: string;
