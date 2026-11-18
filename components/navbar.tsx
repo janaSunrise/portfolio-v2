@@ -22,7 +22,7 @@ export function Navbar() {
 
   const links = [
     { href: '/', label: 'home' },
-    { href: '/about', label: 'about' },
+    { href: '/work', label: 'work' },
     { href: '/library', label: 'library' },
     { href: '/hi', label: 'say hi' }
   ];
