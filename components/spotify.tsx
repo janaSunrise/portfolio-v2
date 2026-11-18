@@ -2,14 +2,9 @@
 
 import { useQuery } from '@tanstack/react-query';
 
-interface SpotifyTrack {
-  isPlaying: boolean;
-  track: string;
-  artist: string;
-  url?: string;
-}
+import type { Track } from '@/app/api/spotify/route';
 
-async function fetchSpotify() {
+async function fetchSpotify(): Promise<{ track: Track | null }> {
   const response = await fetch('/api/spotify');
   if (!response.ok) {
     throw new Error('Failed to fetch Spotify data');
@@ -18,9 +13,10 @@ async function fetchSpotify() {
 }
 
 export function Spotify() {
-  const { data } = useQuery<{ track: SpotifyTrack | null }>({
+  const { data } = useQuery({
     queryKey: ['spotify'],
     queryFn: fetchSpotify,
+    staleTime: 30 * 1000,
     refetchInterval: 30 * 1000
   });
 
@@ -32,13 +28,13 @@ export function Spotify() {
 
   return (
     <a
-      href={url || 'https://spotify.com'}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-2 transition-opacity group underline-offset-4"
+      className="flex items-center gap-2 group underline-offset-4"
     >
-      <div
-        className={`w-1 h-1 rounded-full ${isPlaying ? 'bg-green-500' : 'bg-yellow-500'}`}
+      <span
+        className={`size-1 rounded-full ${isPlaying ? 'bg-green-500' : 'bg-yellow-500'}`}
       />
       <span className="truncate max-w-xs group-hover:underline">{track}</span>
       <span className="opacity-70 text-xs truncate">{artist}</span>
