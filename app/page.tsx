@@ -40,9 +40,9 @@ export default function Home() {
         </h2>
         <ul className="text-sm sm:text-base leading-relaxed">
           <li>- bachelors in cs + ml</li>
-          <li>- learning cuda and maths</li>
+          <li>- learning machine learning and maths</li>
           <li>- spending more time with my guitar</li>
-          <li>- studying japanese & chinese for the fun of it</li>
+          <li>- studying japanese for the fun of it</li>
         </ul>
       </section>
 
