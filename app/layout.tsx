@@ -1,9 +1,10 @@
 import { JetBrains_Mono, Playfair_Display } from 'next/font/google';
 import { ViewTransitions } from 'next-view-transitions';
 
+import { ThemeProvider } from 'next-themes';
+
 import { Navbar } from '@/components/navbar';
 import { QueryProvider } from '@/providers/query-provider';
-import { ThemeProvider } from '@/providers/theme-provider';
 
 import './globals.css';
 
