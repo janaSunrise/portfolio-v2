@@ -37,8 +37,8 @@ export default function Home() {
         <h1 className="text-5xl md:text-6xl text-balance font-medium font-serif tracking-tight mb-8">
           hey, i{"'"}m sunrit.
         </h1>
-        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm uppercase mb-6">
-          <span>Vellore, India</span>
+        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm lowercase mb-6">
+          <span>vellore, india</span>
           <span>•</span>
           <Clock />
           <div className="w-full sm:w-auto flex items-center gap-2">

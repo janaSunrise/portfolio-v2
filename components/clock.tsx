@@ -28,6 +28,6 @@ export function Clock() {
   }, []);
 
   return (
-    <span className={time ? '' : 'opacity-0'}>{time || '00:00'} IST</span>
+    <span className={time ? '' : 'opacity-0'}>{time || '00:00'} ist</span>
   );
 }
