@@ -4,6 +4,10 @@ import { TextLink } from '@/components/text-link';
 
 const projects = [
   {
+    name: 'metalloid',
+    description: 'metal programming in python. gpu go brr, no swift required.'
+  },
+  {
     name: 'zelda',
     description: 'typescript type checker in rust. tsc but fast.'
   },
@@ -23,10 +27,6 @@ const projects = [
   {
     name: 'mathsidian',
     description: 'my take on math tooling for obsidian. abandoned bc no time.'
-  },
-  {
-    name: 'spotify-playing-readme',
-    description: 'display your spotify listening with a beautiful widget.'
   }
 ];
 
