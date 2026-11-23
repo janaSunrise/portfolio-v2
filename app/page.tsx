@@ -100,6 +100,11 @@ export default function Home() {
           <li>
             - partied @ ibw{"'"}25 in a diff city, the night before my finals
           </li>
+          <li>
+            - self-funded lock-in trip to 🇹🇭. shipped code, ate way too much pad
+            thai and sushi, met amazing people.
+          </li>
+          <li>- learned bass in a week. played it live at freshers.</li>
         </ul>
       </section>
 
