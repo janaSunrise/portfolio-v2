@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { ListItem } from '@/components/list-item';
+
 import berserk from './covers/berserk.jpg';
 import blackClover from './covers/black-clover.jpg';
 import demonSlayer from './covers/demon-slayer.jpg';
@@ -117,15 +119,9 @@ export default function Library() {
       <div className="flex flex-col gap-4 mt-4">
         <h2 className="text-base sm:text-lg font-bold uppercase">02. essays</h2>
 
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-1 text-sm sm:text-base leading-relaxed">
           {essays.map(essay => (
-            <li
-              key={essay.url}
-              className="flex items-baseline gap-3 text-sm sm:text-base"
-            >
-              <span aria-hidden="true" className="text-foreground/50">
-                +
-              </span>
+            <ListItem key={essay.url}>
               <a
                 href={essay.url}
                 target="_blank"
@@ -139,7 +135,7 @@ export default function Library() {
                   {essay.author}
                 </p>
               </a>
-            </li>
+            </ListItem>
           ))}
         </ul>
       </div>

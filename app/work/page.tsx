@@ -1,3 +1,5 @@
+import { ListItem } from '@/components/list-item';
+
 const jobs = [
   {
     company: 'fiber',
@@ -19,7 +21,7 @@ const jobs = [
     ]
   },
   {
-    company: '0xSaturn',
+    company: '0xsaturn',
     role: 'founding engineer',
     period: 'feb 2022 — dec 2022',
     highlights: [
@@ -50,7 +52,7 @@ const jobs = [
     ]
   },
   {
-    company: 'Airis4D',
+    company: 'airis4d',
     role: 'ml researcher',
     period: 'jul 2021 — oct 2021',
     highlights: [
@@ -79,17 +81,9 @@ export default function Work() {
               <span className="text-foreground/50"> · {job.period}</span>
             </p>
 
-            <ul className="mt-2.5 flex flex-col gap-1">
+            <ul className="mt-2.5 flex flex-col gap-1 text-sm sm:text-base leading-relaxed">
               {job.highlights.map(highlight => (
-                <li
-                  key={highlight}
-                  className="flex gap-3 text-sm leading-relaxed"
-                >
-                  <span aria-hidden="true" className="text-foreground/50">
-                    +
-                  </span>
-                  <span>{highlight}</span>
-                </li>
+                <ListItem key={highlight}>{highlight}</ListItem>
               ))}
             </ul>
           </li>
