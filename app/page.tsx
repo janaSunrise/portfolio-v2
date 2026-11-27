@@ -6,30 +6,24 @@ import { TextLink } from '@/components/text-link';
 const projects = [
   {
     name: 'metalloid',
-    description: 'metal programming in python. gpu go brr, no swift required.'
+    description:
+      'general-purpose gpu programming on silicon macs using python. it binds straight to the objective-c runtime, and buffers share memory with numpy, no copies.'
   },
   {
     name: 'zelda',
-    description: 'typescript type checker in rust. tsc but fast.'
+    description:
+      'a typescript type checker in rust, built on oxc. i started it because i wanted faster type checking, back before tsgo existed.'
   },
   {
-    name: 'courier',
-    description: 'http client tui. postman but make it terminal.'
-  },
-  {
-    name: 'valspec',
-    description: 'secrets management app. because .env files are scary.'
-  },
-  {
-    name: 'radui',
-    description: 'terminal redis client in rust. redis-cli but actually usable.'
-  },
-  { name: 'mactop', description: 'built an apple silicon monitoring tui' },
-  {
-    name: 'mathsidian',
-    description: 'my take on math tooling for obsidian. abandoned bc no time.'
+    name: 'mactop',
+    description:
+      "a hardware monitor for apple silicon. i built it to watch my gpu while running metal ml workloads, and to poke at macos's private apis."
   }
 ];
+
+const otherProjects = ['courier', 'radui', 'valspec', 'mathsidian'];
+
+const repoUrl = (name: string) => `https://github.com/janaSunrise/${name}`;
 
 export default function Home() {
   return (
@@ -118,16 +112,23 @@ export default function Home() {
         <h2 className="text-base sm:text-lg font-bold uppercase">
           03. stuff i{"'"}ve built
         </h2>
-        <ul className="flex flex-col gap-1 text-sm sm:text-base leading-relaxed">
+        <ul className="flex flex-col gap-4 text-sm sm:text-base leading-relaxed">
           {projects.map(project => (
             <ListItem key={project.name}>
-              <TextLink href={`https://github.com/janaSunrise/${project.name}`}>
-                [{project.name}]
-              </TextLink>
-              : {project.description}
+              <TextLink href={repoUrl(project.name)}>{project.name}</TextLink>
+              <p className="mt-1">{project.description}</p>
             </ListItem>
           ))}
         </ul>
+        <p className="text-sm sm:text-base leading-relaxed text-foreground/60">
+          also:{' '}
+          {otherProjects.map((name, index) => (
+            <span key={name}>
+              <TextLink href={repoUrl(name)}>{name}</TextLink>
+              {index < otherProjects.length - 1 ? ', ' : '.'}
+            </span>
+          ))}
+        </p>
       </section>
     </>
   );
