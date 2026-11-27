@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { ListItem } from '@/components/list-item';
+
 import berserk from './covers/berserk.jpg';
 import blackClover from './covers/black-clover.jpg';
 import demonSlayer from './covers/demon-slayer.jpg';
@@ -64,6 +66,11 @@ const essays = [
     title: 'how to be successful',
     author: 'sam altman',
     url: 'https://blog.samaltman.com/how-to-be-successful'
+  },
+  {
+    title: 'what is first principles thinking?',
+    author: 'farnam street',
+    url: 'https://fs.blog/first-principles/'
   }
 ];
 
@@ -112,23 +119,23 @@ export default function Library() {
       <div className="flex flex-col gap-4 mt-4">
         <h2 className="text-base sm:text-lg font-bold uppercase">02. essays</h2>
 
-        <ul className="flex flex-col divide-y divide-foreground/10 border-y border-foreground/10">
+        <ul className="flex flex-col gap-1 text-sm sm:text-base leading-relaxed">
           {essays.map(essay => (
-            <li key={essay.url}>
+            <ListItem key={essay.url}>
               <a
                 href={essay.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-wrap items-baseline gap-x-3 gap-y-0.5 py-3"
+                className="group flex flex-wrap items-baseline gap-x-3 gap-y-0.5"
               >
-                <h3 className="text-sm sm:text-base font-medium underline-offset-4 group-hover:underline group-focus-visible:underline">
+                <h3 className="font-medium underline-offset-4 group-hover:underline group-focus-visible:underline">
                   {essay.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-foreground/60">
                   {essay.author}
                 </p>
               </a>
-            </li>
+            </ListItem>
           ))}
         </ul>
       </div>

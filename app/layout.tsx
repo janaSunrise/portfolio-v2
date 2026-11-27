@@ -3,6 +3,7 @@ import { ViewTransitions } from 'next-view-transitions';
 
 import { ThemeProvider } from 'next-themes';
 
+import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 import { QueryProvider } from '@/providers/query-provider';
 
@@ -22,7 +23,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Sunrit Jana',
-  description: 'Engineer and Internet Builder'
+  description: 'ML & backend engineer'
 };
 
 export default function RootLayout({
@@ -44,9 +45,10 @@ export default function RootLayout({
               disableTransitionOnChange
             >
               <div className="min-h-screen flex flex-col items-center px-6 md:px-8 pt-8 pb-8 bg-background text-foreground">
-                <div className="w-full max-w-2xl space-y-6">
+                <div className="w-full max-w-2xl flex-1 flex flex-col space-y-6">
                   <Navbar />
                   {children}
+                  <Footer />
                 </div>
               </div>
             </ThemeProvider>
