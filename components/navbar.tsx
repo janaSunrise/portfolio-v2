@@ -45,7 +45,7 @@ export function Navbar() {
                 <span
                   className={`size-1.5 shrink-0 transition-opacity duration-200 ${
                     isActive
-                      ? 'bg-foreground'
+                      ? 'bg-accent'
                       : 'bg-foreground/50 opacity-0 group-hover:opacity-100'
                   }`}
                 />

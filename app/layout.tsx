@@ -23,7 +23,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Sunrit Jana',
-  description: 'Engineer and Internet Builder'
+  description: 'ML & backend engineer'
 };
 
 export default function RootLayout({
